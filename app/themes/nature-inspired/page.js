@@ -14,6 +14,52 @@ export default function ElegantPurpleTheme() {
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
       </Head>
 
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-20">
+            <div className="flex items-center">
+              <Link href="/" className="flex items-center">
+                <span className="font-serif text-2xl font-bold text-[#4a2880]">SSS</span>
+                <span className="font-serif text-2xl text-[#6d4ca4]">Lab</span>
+              </Link>
+            </div>
+            
+            <div className="hidden md:flex items-center space-x-8">
+              <Link href="#about" className="font-sans text-[#6d4ca4] hover:text-[#4a2880] transition-colors text-sm font-medium">
+                About
+              </Link>
+              <Link href="#news" className="font-sans text-[#6d4ca4] hover:text-[#4a2880] transition-colors text-sm font-medium">
+                News
+              </Link>
+              <Link href="#members" className="font-sans text-[#6d4ca4] hover:text-[#4a2880] transition-colors text-sm font-medium">
+                Members
+              </Link>
+              <Link href="#publications" className="font-sans text-[#6d4ca4] hover:text-[#4a2880] transition-colors text-sm font-medium">
+                Publications
+              </Link>
+              <Link href="#projects" className="font-sans text-[#6d4ca4] hover:text-[#4a2880] transition-colors text-sm font-medium">
+                Projects
+              </Link>
+              <Link href="#gallery" className="font-sans text-[#6d4ca4] hover:text-[#4a2880] transition-colors text-sm font-medium">
+                Gallery
+              </Link>
+              <Link href="#" className="px-4 py-2 bg-[#6d4ca4] text-white rounded-md hover:bg-[#4a2880] transition-colors font-sans text-sm font-medium">
+                Contact
+              </Link>
+            </div>
+            
+            <div className="md:hidden flex items-center">
+              <button className="text-[#6d4ca4] hover:text-[#4a2880] focus:outline-none">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-[#f6f2ff] to-white">
         <div className="absolute inset-0 overflow-hidden">

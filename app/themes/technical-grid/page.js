@@ -14,6 +14,52 @@ export default function TechnicalGridTheme() {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
       </Head>
 
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-[#DEE2E6]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-20">
+            <div className="flex items-center">
+              <Link href="/" className="flex items-center">
+                <span className="font-mono text-xl font-bold text-[#212529]">SSS_</span>
+                <span className="font-mono text-xl text-[#6C757D]">LAB</span>
+              </Link>
+            </div>
+            
+            <div className="hidden md:flex items-center space-x-8">
+              <Link href="#about" className="font-mono text-[#212529] hover:text-[#6C757D] transition-colors text-sm">
+                ABOUT
+              </Link>
+              <Link href="#news" className="font-mono text-[#212529] hover:text-[#6C757D] transition-colors text-sm">
+                NEWS
+              </Link>
+              <Link href="#members" className="font-mono text-[#212529] hover:text-[#6C757D] transition-colors text-sm">
+                MEMBERS
+              </Link>
+              <Link href="#publications" className="font-mono text-[#212529] hover:text-[#6C757D] transition-colors text-sm">
+                PUBLICATIONS
+              </Link>
+              <Link href="#projects" className="font-mono text-[#212529] hover:text-[#6C757D] transition-colors text-sm">
+                PROJECTS
+              </Link>
+              <Link href="#gallery" className="font-mono text-[#212529] hover:text-[#6C757D] transition-colors text-sm">
+                GALLERY
+              </Link>
+              <Link href="#" className="ml-4 px-4 py-2 bg-[#212529] text-white font-mono text-sm tracking-wider hover:bg-[#343A40] transition-colors">
+                CONTACT_
+              </Link>
+            </div>
+            
+            <div className="md:hidden flex items-center">
+              <button className="text-[#212529] hover:text-[#6C757D] focus:outline-none">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-[#F8F9FA]">
         <div className="absolute inset-0 overflow-hidden">

@@ -21,9 +21,9 @@ const themes = [
   },
   {
     id: 'nature-inspired',
-    name: '네이처 인스파이어드',
-    description: '자연스러운 그라데이션과 유기적 형태가 특징인 부드러운 디자인',
-    color: 'bg-green-600'
+    name: '성신여대 퍼플',
+    description: '고급스러운 퍼플 디자인',
+    color: 'bg-purple-600'
   },
   {
     id: 'technical-grid',
